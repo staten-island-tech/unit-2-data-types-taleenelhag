@@ -21,20 +21,30 @@ def skins2(money, cost, isAvailable):
         else:
             print("Bruh get out!") """
 
-def GCF(num):
-    factors = []  # List to store the factors
-    for i in range(1, num + 1):  # Loop through numbers from 1 to num
-        x = num % i == 0  # Check if i is a factor of num (no remainder)
-        y = True  # y is always True (as per your format)
+""" def GCF(num):
+    factors = [] 
+    for i in range(1, num + 1):  
+        if number % 1 == 0:   
+        
 
-        if x == True and y == True:  # If both conditions are true, i is a factor
+        
             factors.append(i)
 
     return factors
 
-# Accept user input
-number = int(input("Enter a number to find its factors: "))  # Input the number
-
-# Call the function and print the result
+number = int(input("Enter a number to find its factors: "))   """
+""" 
 factors = GCF(number)
 print(f"The factors of {number} are: {factors}")
+
+def find_factor():
+ """
+def find_factor(num):
+    factors = []
+    for i in range(1, min(num) + 1): 
+        if num % i == 0:
+            factors.append(i)
+    return factors 
+
+number = 20
+print(f"factprs {number} are: {find_factor(number)}")
